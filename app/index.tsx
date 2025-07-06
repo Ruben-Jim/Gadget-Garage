@@ -1,13 +1,20 @@
 
 import React from "react";
-import { Text, View, StyleSheet, ViewStyle, TextStyle } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
-interface Styles {
-  container: ViewStyle;
-  text: TextStyle;
-}
+interface IndexProps {}
 
-const styles = StyleSheet.create<Styles>({
+const Index: React.FC<IndexProps> = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
@@ -19,15 +26,8 @@ const styles = StyleSheet.create<Styles>({
     color: "#000000",
     textAlign: "center",
     paddingHorizontal: 20,
+    fontFamily: "System",
   },
 });
-
-const Index: React.FC = (): React.ReactElement => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
-};
 
 export default Index;
