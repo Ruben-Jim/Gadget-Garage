@@ -28,9 +28,9 @@ const RootLayout: React.FC<RootLayoutProps> = () => {
     <Stack
       screenOptions={{
         headerStyle: {
-          backgroundColor: "#ffffff",
+          backgroundColor: "#2c3e50",
         },
-        headerTintColor: "#000000",
+        headerTintColor: "#ffffff",
         headerTitleStyle: {
           fontWeight: "bold",
         },
@@ -40,6 +40,41 @@ const RootLayout: React.FC<RootLayoutProps> = () => {
         name="index" 
         options={{ 
           title: "Gadget Garage",
+          headerShown: true,
+        }} 
+      />
+      <Stack.Screen 
+        name="services" 
+        options={{ 
+          title: "Our Services",
+          headerShown: true,
+        }} 
+      />
+      <Stack.Screen 
+        name="quote" 
+        options={{ 
+          title: "Get Quote",
+          headerShown: true,
+        }} 
+      />
+      <Stack.Screen 
+        name="messages" 
+        options={{ 
+          title: "Messages",
+          headerShown: true,
+        }} 
+      />
+      <Stack.Screen 
+        name="appointment" 
+        options={{ 
+          title: "Book Appointment",
+          headerShown: true,
+        }} 
+      />
+      <Stack.Screen 
+        name="payment" 
+        options={{ 
+          title: "Payment",
           headerShown: true,
         }} 
       />
