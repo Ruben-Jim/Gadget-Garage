@@ -1,12 +1,21 @@
-import { SplashScreen, Stack } from "expo-router";
 
+import React from "react";
+import { SplashScreen, Stack } from "expo-router";
 
 SplashScreen.preventAutoHideAsync();
 
-export default function RootLayout() {
+const RootLayout: React.FC = (): React.ReactElement => {
   return (
     <Stack>
-      <Stack.Screen name="index" options={{ headerShown: true }} />
+      <Stack.Screen 
+        name="index" 
+        options={{ 
+          headerShown: true,
+          title: "Home"
+        }} 
+      />
     </Stack>
   );
-}
+};
+
+export default RootLayout;
