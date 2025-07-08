@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Stack } from "expo-router";
 import { useFonts } from "expo-font";
@@ -36,47 +35,47 @@ const RootLayout: React.FC<RootLayoutProps> = () => {
         },
       }}
     >
-      <Stack.Screen 
-        name="index" 
-        options={{ 
+      <Stack.Screen
+        name="index"
+        options={{
           title: "Gadget Garage",
-          headerShown: true,
-        }} 
+          headerShown: false,
+        }}
       />
-      <Stack.Screen 
-        name="services" 
-        options={{ 
+      <Stack.Screen
+        name="services"
+        options={{
           title: "Our Services",
           headerShown: true,
-        }} 
+        }}
       />
-      <Stack.Screen 
-        name="quote" 
-        options={{ 
+      <Stack.Screen
+        name="quote"
+        options={{
           title: "Get Quote",
           headerShown: true,
-        }} 
+        }}
       />
-      <Stack.Screen 
-        name="messages" 
-        options={{ 
+      <Stack.Screen
+        name="messages"
+        options={{
           title: "Messages",
           headerShown: true,
-        }} 
+        }}
       />
-      <Stack.Screen 
-        name="appointment" 
-        options={{ 
+      <Stack.Screen
+        name="appointment"
+        options={{
           title: "Book Appointment",
           headerShown: true,
-        }} 
+        }}
       />
-      <Stack.Screen 
-        name="payment" 
-        options={{ 
+      <Stack.Screen
+        name="payment"
+        options={{
           title: "Payment",
           headerShown: true,
-        }} 
+        }}
       />
     </Stack>
   );
