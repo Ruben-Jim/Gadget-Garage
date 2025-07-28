@@ -39,6 +39,8 @@ const Quote: React.FC = () => {
     );
   };
 
+
+
   return (
     <ScrollView style={styles.container}>
       <StatusBar style="dark" />
